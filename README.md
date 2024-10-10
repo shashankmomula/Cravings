@@ -21,6 +21,17 @@ This project, **Cravings**, is my first learning project where I explored the co
 - Improved skills in managing global state using **Redux**.
 - Enhanced knowledge of UI styling with **Tailwind CSS**.
 
+## Screenshots
+
+### 1. Restaurant Listing
+![Restaurant Listing](./src/components/screenshots/cravings_1.png)
+
+### 2. Menu Display
+![Menu Display](./src/components/screenshots/screenshot_2.png)
+
+### 3. Cart Functionality
+![Cart](./src/components/screenshots/screenshot_3.png)
+
 ## Installation
 
 Clone the repository:

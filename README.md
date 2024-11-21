@@ -1,48 +1,68 @@
 # Cravings 🍽️
 
-Cravings is my first learning project, where I explored core React concepts like React Hooks, Tailwind CSS, Redux, and handling APIs. This project showcases restaurant data like restaurant names, their menus, and allows users to add or remove items from the cart. Through Cravings, I deepened my knowledge of React and learned essential web development concepts.
+Cravings is my first learning project where I explored core React concepts like React Hooks, Tailwind CSS, Redux, and API handling. This project showcases restaurant data, including restaurant names, their menus, and allows users to add or remove items from the cart. Through Cravings, I gained a deeper understanding of React and enhanced my knowledge of essential web development concepts.
 
-## Features
-- Display a list of restaurants and their menu items.
-- Add items to the cart and manage your cart by adding or removing items.
-- Fetch real-time restaurant data using the Swiggy API based on locality.
-- Implement state management using Redux and Redux Toolkit.
-- Smooth and responsive UI built with Tailwind CSS.
-- Learnings from React Hooks, API fetching, and routing concepts.
+---
 
-## Technologies Used
-- **React**: For building the user interface.
-- **Tailwind CSS**: For styling and responsive design.
-- **Redux & Redux Toolkit**: For state management.
-- **Swiggy API**: For fetching restaurant data.
-- **Jest**: For testing the app.
+## **Features**
+- **Restaurant Listings**: Display a list of restaurants and their menu items.
+- **Cart Functionality**: Add and remove items from the cart.
+- **Real-time API Integration**: Fetch restaurant data using the Swiggy API based on the user's locality.
+- **State Management**: Manage the application state with Redux and Redux Toolkit.
+- **Responsive UI**: Built a smooth and responsive user interface using Tailwind CSS.
+- **React Hooks & Routing**: Leveraged React Hooks for state management and API handling, and implemented React Router for page navigation.
 
-## Learnings
-Throughout the development of Cravings, I gained hands-on experience in:
-- React project setup from scratch.
-- Deep dive into JSX and other core React features.
-- Understanding Tailwind CSS basics and setting it up.
-- Deep dive into all the important React Hooks.
-- Exploring React Routing.
-- Handling live API data and effectively managing it.
-- Understanding Functional vs Class-Based Components.
-- A deep dive into Redux and Redux Toolkit.
-- Testing the application using Jest.
+---
 
-## Installation
+## **Technologies Used**
+- **React**: For building the user interface and managing components.
+- **Tailwind CSS**: For styling and creating a responsive design.
+- **Redux & Redux Toolkit**: For state management across the application.
+- **Swiggy API**: For fetching live restaurant data based on locality.
+- **Jest**: For testing the application functionality.
 
-1. Clone the repository
+---
+
+## **Learnings**
+During the development of Cravings, I gained hands-on experience in:
+- **React Project Setup**: Building a React app from scratch.
+- **JSX and React Components**: A deep dive into JSX and creating functional components.
+- **Tailwind CSS**: Setting up and using Tailwind CSS for responsive design.
+- **React Hooks**: Understanding and applying various hooks like `useState`, `useEffect`, and `useContext`.
+- **React Router**: Implementing page navigation using React Router.
+- **API Handling**: Fetching and managing real-time API data.
+- **Redux & Redux Toolkit**: Understanding the principles of Redux for global state management.
+- **Testing**: Writing tests for components using Jest.
+
+---
+
+## **Installation**
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/shashankmomula/
-   cd cravings
+   git clone https://github.com/shashankmomula/Cravings.git
+   cd Cravings
+   ```
 
-## Learning Outcomes
-- Gained in-depth understanding of **React Hooks** and their use in managing state and effects.
-- Learned to integrate **APIs** and handle asynchronous data fetching.
-- Improved skills in managing global state using **Redux**.
-- Enhanced knowledge of UI styling with **Tailwind CSS**.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Screenshots
+3. Run the development server:
+   ```bash
+   npm start
+   ```
+
+---
+
+## **Learning Outcomes**
+- Gained a solid understanding of **React Hooks** and their use in managing state and side effects.
+- Learned to fetch data from APIs and handle asynchronous operations effectively.
+- Enhanced skills in global state management using **Redux** and **Redux Toolkit**.
+- Improved UI styling skills using **Tailwind CSS**, creating a responsive and user-friendly design.
+
+---
 
 ### 1. Restaurant Listing
 ![Restaurant Listing](./src/components/screenshots/cravings_1.png)
@@ -53,10 +73,8 @@ Throughout the development of Cravings, I gained hands-on experience in:
 ### 3. Cart Functionality
 ![Cart](./src/components/screenshots/screenshot_3.png)
 
-## Installation
 
-Clone the repository:
+## **Contributing**
+Feel free to fork the repository, open issues, and submit pull requests for improvements. Your contributions are highly welcome!
 
-```bash
-  git clone https://github.com/shashankmomula/Cravings.git
-  cd Cravings
+---

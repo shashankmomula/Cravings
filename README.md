@@ -73,6 +73,8 @@ During the development of Cravings, I gained hands-on experience in:
 ### 3. Cart Functionality
 ![Cart](./src/components/screenshots/screenshot_3.png)
 
+## **Live Demo**
+You can access the live demo of the project [here](https://cravingss.netlify.app).
 
 ## **Contributing**
 Feel free to fork the repository, open issues, and submit pull requests for improvements. Your contributions are highly welcome!

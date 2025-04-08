@@ -4,11 +4,13 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import Mindcards from "./Mindcards";
 
 const Body = () => {
   // Local State Variable - Super powerful variable
   const [listOfRestaurants, setListOfRestraunt] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+  const [mindCards,setMindcards] = useState([]);
 
   const [searchText, setSearchText] = useState("");
 
@@ -28,9 +30,13 @@ const Body = () => {
     const json = await data.json();
 
     // Optional Chaining
+    setMindcards(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
+    
     setListOfRestraunt(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    console.log(listOfRestaurants);
+
     setFilteredRestaurant(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
@@ -48,7 +54,7 @@ const Body = () => {
   const { loggedInUser, setUserName } = useContext(UserContext);
 
   return  (
-    <div className=" bg-neutral-300">
+    <div className="">
       <div className="filter flex">
         <div className="search m-4 p-4">
           <input
@@ -67,7 +73,7 @@ const Body = () => {
             onClick={() => {
               // Filter the restraunt cards and update the UI
               // searchText
-              console.log(searchText);
+              // console.log(searchText);
 
               const filteredRestaurant = listOfRestaurants.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -100,8 +106,13 @@ const Body = () => {
             onChange={(e) => setUserName(e.target.value)}
           />
         </div>
+        
       </div>
       <div className="flex flex-wrap">
+        {mindCards.slice(0,10).map((c)=>(
+        <Mindcards data={c.imageId}/>
+        ))}
+      
         {filteredRestaurant.map((restaurant) => (
           <Link
             key={restaurant?.info.id}
